@@ -40,3 +40,8 @@ DBT serves as the interface between the code, which is stored and managed in a G
 - **_source_ function**: provides abstraction with advantages like single configuration, better visibility (green nodes in the lineage graph), and data freshness.
 - **dbt debug**: checks the connection settings and verifies if dbt can successfully connect to the data platform.
 - **Directed Acyclic Graph (DAG)**: the flow and dependencies of data transformations from source to final models.
+
+### **Types of Tests in dbt**
+- **Generic Tests**: Written in YAML. Return number of records that don't meet assertions. Run on specific columns. 
+    - Unique. Non-null. Accepted_values. Relationships.
+- **Singular Tests**: Queries run against models. Run on the entire models. 
