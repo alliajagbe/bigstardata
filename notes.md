@@ -39,3 +39,4 @@ DBT serves as the interface between the code, which is stored and managed in a G
 - **dbt init**: creates a new folder with necessary files to get started with dbt. creates a connection profile on your local machine, called _profiles.yml_.
 - **_source_ function**: provides abstraction with advantages like single configuration, better visibility (green nodes in the lineage graph), and data freshness.
 - **dbt debug**: checks the connection settings and verifies if dbt can successfully connect to the data platform.
+- **Directed Acyclic Graph (DAG)**: the flow and dependencies of data transformations from source to final models.
