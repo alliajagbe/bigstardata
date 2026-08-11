@@ -30,3 +30,12 @@ DBT serves as the interface between the code, which is stored and managed in a G
 - **Staging**: clean, standardized source data
 - **Intermediate**: transformed data between staging and final
 - **Marts**: final data used for analysis and visualization
+
+### **Types of Marts Models**
+- Fact: Capture events or transactions. Updated often and quickly. 
+- Dimensions: Business entities that don't often change.  
+
+### **Starting dbt**
+- **dbt init**: creates a new folder with necessary files to get started with dbt. creates a connection profile on your local machine, called _profiles.yml_.
+- **_source_ function**: provides abstraction with advantages like single configuration, better visibility (green nodes in the lineage graph), and data freshness.
+- **dbt debug**: checks the connection settings and verifies if dbt can successfully connect to the data platform.
