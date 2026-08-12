@@ -45,3 +45,23 @@ DBT serves as the interface between the code, which is stored and managed in a G
 - **Generic Tests**: Written in YAML. Return number of records that don't meet assertions. Run on specific columns. 
     - Unique. Non-null. Accepted_values. Relationships.
 - **Singular Tests**: Queries run against models. Run on the entire models. 
+
+## **Dagster Main Features**
+- Open-source
+- Python-based
+- Works for every stage of the development cycle
+
+### **Dagster Key Concepts**
+- Software Defined Assets (SDAs) - Persistent storage objects like tables or machine learning models
+- Ops - Computational units like executing database queries
+- Graphs - Sets of interconnected Ops that work together to accomplish more complex tasks
+- Jobs - Main units of execution and monitoring. Composed of ops connected through data dependencies
+- Schedules and Sensors - Initiate runs. Schedules trigger runs at fixed intervals. Sensors initiate them based on external changes
+![Dagster Flow](dagster_flow.png)
+
+### **Benefits of Airbyte Streams as SDAs**
+1. Visualize streams
+2. Execute syncs
+3. Define downstream transformations
+4. Track historical metadata and logs
+5. Tracing data lineage
